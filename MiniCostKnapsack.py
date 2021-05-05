@@ -13,7 +13,7 @@ def MaximumKnapsack(value: list,cost: list):
     for i in range(len(value)):
         Mincost[i][0]=0
         
-    for t in range(value[0]+1):
+    for t in range(1,value[0]+1):
         Mincost[0][t]=cost[0]
         Take[0][t]="YES"
         
