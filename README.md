@@ -21,3 +21,22 @@ NoOfValues 3
 python MiniCostKnapsack.py <name of the data file>
 
 ```
+
+- Optimized knapsak problem with FPATS consists of FPTASKnapsack.py
+1. Find the maximum valued item,find maximum value in value array. Let this maximum value be maxVal.
+2. Compute adjustment factor k for all values
+3. Adjust all values, i.e., create a new array valFptas that values divided by k. Do following for every value value[i].
+4. Run ``` MaximumKnapsack(value: list,cost: list) ``` on valFptas array and cost array
+
+```
+k  = (maxVal * ε) / n
+
+valFptas[i] = floor(val[i] / k)
+
+```
+
+## Run the programme
+```
+python FPTASKnapsack.py <name of the data file>
+
+```
